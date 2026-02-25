@@ -58,9 +58,10 @@ export const generateVisionImage = async (prompt: string): Promise<string | null
         parts: [{ text: `High-quality photorealistic construction project: ${prompt}. Professional lighting, architectural photography style.` }],
       },
       config: {
-        imageConfig: {
-          aspectRatio: "16:9"
-        }
+
+        // imageConfig: {
+        //   aspectRatio: "16:9"
+        // }
       }
     });
 

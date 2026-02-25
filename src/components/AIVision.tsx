@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Sparkles, Loader2, Camera, Download, RefreshCw } from 'lucide-react';
-import { generateVisionImage } from '../services/geminiService';
+import { generateVisionImage } from '../services/geminiService.ts';
 
 const AIVision: React.FC = () => {
   const [prompt, setPrompt] = useState('');

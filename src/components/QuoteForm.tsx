@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { Send, Loader2, Sparkles, AlertCircle } from 'lucide-react';
-import { getAIProjectAdvice } from '../services/geminiService';
-import { AIResponse } from '../types';
+import { getAIProjectAdvice } from '../services/geminiService.ts';
+import { AIResponse } from '../types.ts';
 
 const QuoteForm: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', phone: '', description: '' });
