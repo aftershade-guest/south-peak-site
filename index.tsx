@@ -1,0 +1,17 @@
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  console.error("Failed to find the root element. Check index.html for <div id='root'></div>");
+} else {
+  const root = createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
